@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "ebe5862c-2826-42e7-9f94-0a021332e755",
+		"name": "The Mill Adventure",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14191208"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activeFrom\": 1647946090592,\r\n    \"brandId\": \"000000000000000000000001\",\r\n    \"currencyCode\": \"SEK\",\r\n    \"nextResetTime\": 1648032490592,\r\n    \"period\": \"DAY\",\r\n    \"status\": \"ACTIVE\",\r\n    \"type\": \"DEPOSIT\",\r\n    \"userId\": \"VijPYTEOgK7dxLs5fBjJ\",\r\n    \"userLimitId\": \"LKMgxoE0yFgH6F6iShEx\",\r\n    \"value\": \"10000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/userLimit/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"userLimit",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update progress",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"progress\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/userLimit/progress/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"userLimit",
+						"progress",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "LKMgxoE0yFgH6F6iShEx"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset progress",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"progress\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/userLimit/reset/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"userLimit",
+						"reset",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "LKMgxoE0yFgH6F6iShEx"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

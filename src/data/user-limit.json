@@ -1,0 +1,24 @@
+[
+  {
+    "aggregateId": "34ff0aa0-165c-427d-88bf-12e13a64d9e3",
+    "context": { "correlationId": "fee1a2ae-37a4-43d1-8156-832b62800006" },
+    "createdAt": 1707003746775,
+    "eventId": "872871e2-f9b5-456a-8cb6-0ea1577fb2d9",
+    "payload": {
+      "activeFrom": 1647946090592,
+      "brandId": "000000000000000000000001",
+      "currencyCode": "SEK",
+      "nextResetTime": 1648032490592,
+      "period": "DAY",
+      "status": "ACTIVE",
+      "type": "DEPOSIT",
+      "userId": "VijPYTEOgK7dxLs5fBjJ",
+      "userLimitId": "LKMgxoE0yFgH6F6iShEx",
+      "value": "10000",
+      "progress": "0"
+    },
+    "sequenceNumber": 574,
+    "source": "limitUser",
+    "type": "USER_LIMIT_RESET"
+  }
+]
